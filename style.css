@@ -5,6 +5,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
 }
+.draw{
+    color: white;
+    background-color: rgb(11,34,57) !important;
+    border-bottom: 3px solid white !important;
+}
 
 img{
     display: block;
@@ -70,17 +75,18 @@ img{
     background-color: rgb(232,234,237);
 }
 
-.canvascontainer{
+.canvascontainer,.canvas{
     background-color: rgb(255, 255, 255);
     height: calc(100vh - 2.1*3rem);
     width: calc(100vw - 50px);
+    border-radius: 0px 0px 41px 0px;
 }
 
-.selected{
-    border-bottom: 3.0px solid rgb(11,34,57);
-}
-
-.menu,.user{
+.menu{
     /* border: 1px solid black; */
     border-radius: 0px 900px 0px 0px; 
+}
+
+.tool-selected,.tool-selected>img{
+    background-color: rgb(255, 255, 255)!important;
 }

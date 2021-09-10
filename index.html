@@ -7,36 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./icons/whiteboard.png">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <title>YG-WhiteBoard</title>
 </head>
 
 <body>
     <div class="title" style="color: white; font-size: 16px; font-weight: 400;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">YG - WhiteBoard</div>
 
-    <div class="menu">
-        <div class="user"> <img src="./icons/user.png"> </div>
+    <div class="menu" style="border-bottom: 3px solid white;">
+        <div class="user"style="border-bottom: 3px solid white;"> <img src="./icons/user.png"> </div>
         <div class="draw selected" style="font-size: 14px;">Draw</div>
-        <div class="clear" style="font-size: 14px;">Clear</div>
-        <div class="help" style="font-size: 14px;">Help</div>
+        <div class="clear" style="border-bottom: 3px solid white; font-size: 14px;">Clear</div>
+        <div class="help" style="border-bottom: 3px solid white; font-size: 14px;">Help</div>
     </div>
 
     <div class="tools">
         <div class="undo"><img src="./icons/undo.png" alt="Undo"></div>
         <div class="redo"><img src="./icons/redo.png" alt="Redo"></div>
-        <div class="pencil selected"><img src="./icons/pen-tool.png" alt="Pen"></div>
+        <div class="pencil tool-selected"><img src="./icons/pen-tool.png" alt="Pen"></div>
         <div class="eraser"><img src="./icons/eraser.png"></div>
-        <div class="stickynote"><img src="./icons/stickynote.png"></div>
-        <div class="photo"><img src="./icons/pictureupload.png"></div>
+        <div class="stickynote"><img src="./icons/stickynote1.png"></div>
+        <div class="photo"><img src="./icons/image.png"></div>
     </div>
 
     <div class="container">
-        <div class="settings">
-            <div class="setting"><img src="./icons/settings (1).png"></div>
-            <div class="download"><img src="./icons/down-arrow.png"></div>
+        <div class="settings" style="border-top: 3px solid white;">
+            <div class="setting" style="border-top: 3px solid white;"><img src="./icons/settings (1).png"></div>
+            <div class="download" style="border-top: 3px solid white;"><img src="./icons/down-arrow.png"></div>
         </div>
         <div class="canvascontainer">  <canvas class="canvas" style="background-color: white;"></canvas> </div>
-        <div class="material-icons-outlined add" style="box-shadow: -2px 2px 3px 1px rgb(148, 159, 175);display:flex; justify-content: center; align-items: center; color: white; position: fixed; width: 70px; height: 70px; border-radius: 50%; right: 20px; bottom: 20px;">add_circle_outline</div>
+        <div class="material-icons-outlined add" style="box-shadow: -2px 2px 3px 1px rgb(148, 159, 175);
+                                                        display:flex; 
+                                                        justify-content: center; 
+                                                        align-items: center; 
+                                                        color: white; 
+                                                        position: fixed; 
+                                                        width: 70px; 
+                                                        height: 70px; 
+                                                        border-radius: 50%; 
+                                                        right: 20px; 
+                                                        bottom: 20px;
+                                                        font-size: xx-large;">add_circle_outline</div>
     </div>
     <script src="./script.js"></script>
 </body>
