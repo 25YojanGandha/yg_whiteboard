@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: rgb(11,34,57);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+img{
+    display: block;
+    font-weight: 400;
+    height: 1.3rem;
+    width: 1.3rem;
+    background-color: rgb(232,234,237);
+}
+
+.title,.menu,.tools{
+    height: 2.1rem;
+    /* border: 1px solid black; */
+    display: flex;  
+    background-color: rgb(232,234,237);
+}
+
+.menu>div,.tools>div{
+    height: 2.1rem;
+    width: 3.0rem;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+    background-color: rgb(232,234,237);
+}
+
+.undo,.redo,.photo,.stickynote,.eraser,.pencil,.user,.clear,.draw,.help,.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(232,234,237);
+}
+
+.title{
+    background-color: rgb(11,34,57); 
+    /* border-top-left-radius: 20% 0%; */
+}
+
+.container{
+    height: calc(100vh - 2.1*3rem);
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(11,34,57);
+}
+
+.settings{
+    width: 50px;
+    height: calc(100vh - 2.1*3rem);
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgb(232,234,237);
+}
+.settings>div{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background-color: rgb(232,234,237);
+}
+
+.canvascontainer{
+    background-color: rgb(255, 255, 255);
+    height: calc(100vh - 2.1*3rem);
+    width: calc(100vw - 50px);
+}
+
+.selected{
+    border-bottom: 3.0px solid rgb(11,34,57);
+}
+
+.menu,.user{
+    /* border: 1px solid black; */
+    border-radius: 0px 900px 0px 0px; 
+}
