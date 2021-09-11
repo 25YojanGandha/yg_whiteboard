@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./icons/whiteboard.png">
+    <link rel="shortcut icon" href="./icons/board.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <title>YG-WhiteBoard</title>
@@ -16,7 +16,7 @@
 
     <div class="menu" style="border-bottom: 3px solid white;">
         <div class="user"style="border-bottom: 3px solid white;"> <img src="./icons/user.png"> </div>
-        <div class="draw selected" style="font-size: 14px;">Draw</div>
+        <div class="draw" style="font-size: 14px;">Draw</div>
         <div class="clear" style="border-bottom: 3px solid white; font-size: 14px;">Clear</div>
         <div class="help" style="border-bottom: 3px solid white; font-size: 14px;">Help</div>
     </div>
@@ -24,10 +24,16 @@
     <div class="tools">
         <div class="undo"><img src="./icons/undo.png" alt="Undo"></div>
         <div class="redo"><img src="./icons/redo.png" alt="Redo"></div>
-        <div class="pencil tool-selected"><img src="./icons/pen-tool.png" alt="Pen"></div>
-        <div class="eraser"><img src="./icons/eraser.png"></div>
+        <div class="pencil tool-selected" style="position: relative;"><img src="./icons/pen-tool.png" alt="Pen">
+            <input type="range" min="0" max="40" style="display: none">
+        </div>
+        <div class="eraser" style="position: relative;"><img src="./icons/eraser.png">
+            <input type="range" min="0" max="40" style="display: none"></input>
+        </div>
         <div class="stickynote"><img src="./icons/stickynote1.png"></div>
-        <div class="photo"><img src="./icons/image.png"></div>
+        <div class="photo"><img src="./icons/image.png">
+         <input type="file" style="display: none"></input> 
+        </div>
     </div>
 
     <div class="container">
@@ -50,6 +56,10 @@
                                                         font-size: xx-large;">add_circle_outline</div>
     </div>
     <script src="./script.js"></script>
+    <script src="./clear&help.js"></script>
+    <script src="./photo.js"></script>
+    <script src="./sticky.js"></script>
+    <script src="./undo&redo.js"></script>
 </body>
 
 </html>

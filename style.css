@@ -9,6 +9,9 @@
     color: white;
     background-color: rgb(11,34,57) !important;
     border-bottom: 3px solid white !important;
+    border-left: 3px solid white !important;
+    border-right: 3px solid white !important;
+    border-radius: 0px 0px 9px 9px !important;
 }
 
 img{
@@ -79,12 +82,12 @@ img{
     background-color: rgb(255, 255, 255);
     height: calc(100vh - 2.1*3rem);
     width: calc(100vw - 50px);
-    border-radius: 0px 0px 41px 0px;
+    border-radius: 0px 0px 60px 0px;
 }
 
 .menu{
     /* border: 1px solid black; */
-    border-radius: 0px 900px 0px 0px; 
+    border-radius: 0px 11111110px 0px 0px; 
 }
 
 .tool-selected,.tool-selected>img{
